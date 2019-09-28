@@ -2,12 +2,15 @@
 #include <thread>
 #include <mutex>
 
-#include "clsocket\ActiveSocket.h"
+#include "clsocket\PassiveSocket.h"
 
+//This Factory, listens and creates clients.
 class SocketServer {
 public:
 	SocketServer(const int& port, const char* ip) : _ip(ip), _port(port){
-		//TODO: thread out socket server lsitener to create
+		_socket.Initialize();
+		_socket.Listen(ip, port);
+		start();
 	}
 
 	void start() {
@@ -15,8 +18,11 @@ public:
 	}
 
 	void listen() {
+		SimpleSocket::CActiveSocket *pClient = NULL;
 		while (running()) {
-			//TODO: Listen for client blocking with timout
+			if ((pClient = _socket.Accept()) != NULL) {
+				//TODO: Create client.
+			}
 		}
 	}
 
@@ -40,4 +46,5 @@ private:
 	bool _running;
 	//running mutex;
 	std::mutex _runningmutex;
+	SimpleSocket::CPassiveSocket _socket;
 };

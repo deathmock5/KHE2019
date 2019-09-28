@@ -75,7 +75,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)/include</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -84,7 +84,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)/include</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -95,7 +95,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)/include</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -110,7 +110,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)/include</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -119,24 +119,38 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\clsocket\ActiveSocket.cpp" />
-    <ClCompile Include="src\tinyxml\tinystr.cpp" />
-    <ClCompile Include="src\tinyxml\tinyxml.cpp" />
-    <ClCompile Include="src\tinyxml\tinyxmlerror.cpp" />
-    <ClCompile Include="src\tinyxml\tinyxmlparser.cpp" />
     <ClCompile Include="src\clsocket\PassiveSocket.cpp" />
     <ClCompile Include="src\clsocket\SimpleSocket.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\sqlite\shell.c" />
+    <ClCompile Include="src\sqlite\sqlite3.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\clsocket\ActiveSocket.h" />
     <ClInclude Include="include\clsocket\Host.h" />
     <ClInclude Include="include\clsocket\PassiveSocket.h" />
-    <ClInclude Include="include\SimpleSocket.h" />
+    <ClInclude Include="include\GameDatabase.h" />
+    <ClInclude Include="include\GameTextManager.h" />
+    <ClInclude Include="include\clsocket\SimpleSocket.h" />
     <ClInclude Include="include\clsocket\StatTimer.h" />
     <ClInclude Include="include\SocketServer.h" />
     <ClInclude Include="include\SocketServerClient.h" />
+    <ClInclude Include="include\sqlite\sqlite.h" />
+    <ClInclude Include="include\sqlite\sqlite3.h" />
+    <ClInclude Include="include\sqlite\sqlite3ext.h" />
+    <ClInclude Include="include\sqlite\sqlite_buffered.h" />
     <ClInclude Include="include\tinyXML\tinystr.h" />
     <ClInclude Include="include\tinyXML\tinyxml.h" />
+    <ClInclude Include="include\sqlite\buffered_input_query_by_keys.hpp" />
+    <ClInclude Include="include\sqlite\buffered_insert_query.hpp" />
+    <ClInclude Include="include\sqlite\ct_integer_list.hpp" />
+    <ClInclude Include="include\sqlite\database.hpp" />
+    <ClInclude Include="include\sqlite\input_query.hpp" />
+    <ClInclude Include="include\sqlite\logging.hpp" />
+    <ClInclude Include="include\sqlite\query.hpp" />
+    <ClInclude Include="include\sqlite\result_code_container.hpp" />
+    <ClInclude Include="include\sqlite\tuple_utils.hpp" />
+    <ClInclude Include="include\sqlite\value_access_policy.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

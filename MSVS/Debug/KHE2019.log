@@ -1,3 +1,6 @@
 ﻿  main.cpp
+d:\projects\simplebattlebot\khe2019\msvs\include\sqlite\database.hpp(11): warning C4005: 'SQLITE_LIMIT_WORKER_THREADS': macro redefinition
+  d:\projects\simplebattlebot\khe2019\msvs\include\sqlite\sqlite3.h(3686): note: see previous definition of 'SQLITE_LIMIT_WORKER_THREADS'
+LINK : warning LNK4067: ambiguous entry point; selected 'mainCRTStartup'
   KHE2019.vcxproj -> D:\Projects\SimpleBattleBot\KHE2019\MSVS\Debug\KHE2019.exe
   KHE2019.vcxproj -> D:\Projects\SimpleBattleBot\KHE2019\MSVS\Debug\KHE2019.pdb (Partial PDB)
