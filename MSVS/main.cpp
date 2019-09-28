@@ -7,5 +7,6 @@ int main(int* argc, int ** args) {
 	//TODO: load XML documents to take text.
 	//TODO: Create instance of SQLite to manage data?
 
+	std::cin.get();
 	return EXIT_SUCCESS;
 }

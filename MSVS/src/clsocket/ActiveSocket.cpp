@@ -40,7 +40,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  *----------------------------------------------------------------------------*/
-#include "ActiveSocket.h"
+#include "clsocket/ActiveSocket.h"
 
 namespace SimpleSocket {
 	CActiveSocket::CActiveSocket(CSocketType nType) : CSimpleSocket(nType)
