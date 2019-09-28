@@ -110,6 +110,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ext\ActiveSocket.cpp" />
+    <ClCompile Include="ext\PassiveSocket.cpp" />
+    <ClCompile Include="ext\SimpleSocket.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext\ActiveSocket.h" />
+    <ClInclude Include="ext\Host.h" />
+    <ClInclude Include="ext\PassiveSocket.h" />
+    <ClInclude Include="ext\SimpleSocket.h" />
+    <ClInclude Include="ext\StatTimer.h" />
+    <ClInclude Include="include\SocketServer.h" />
+    <ClInclude Include="include\SocketServerClient.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
