@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Temp</title>
+</head>
+<body>
+<form action="/SubmitAction">
+<table style="width:100%" border="5" bordercolor="#ff0000">
+  <tr>
+    <td><p>#{CONTENT}</p></td>
+  </tr>
+ </table>
+ <table style="width:100%" border="5" bordercolor="#ff0000">
+  <tr>
+    <td><button type="submit" value="Action1-23123213">Action1</button></td>
+    <td><button type="submit" value="Action1-231ddd13">Action2</button></td>
+  </tr>
+</table>
+</form>
+  <form action="/SubmitActionAdmin">
+<table style="width:100%" border="5" bordercolor="#00ff00">
+  <tr>
+    <td><textarea rows="4" cols="50">#{CONTENT}</textarea></td>
+  </tr>
+ </table>
+ <table style="width:100%" border="5" bordercolor="#00ff00">
+  <tr>
+    <td>Button Name</td>
+    <td><input type="text" name="BTN1_NAME" value="Action1"></td>
+    <td><input type="text" name="BTN2_NAME" value="Action2"></td>
+  </tr>
+  <tr>
+    <td>Button Value</td>
+    <td><input type="text" name="BTN1_Val" value="Action1-23123213"></td>
+    <td><input type="text" name="BTN2_Val" value="Action1-231ddd13"></td>
+  </tr>
+</table>
+</form>
+  <input type="submit" value="Preview">
+  <input type="submit" value="AddButton">
+  <input type="submit" value="RemoveButton">
+</form>
+</body>
+</html>
