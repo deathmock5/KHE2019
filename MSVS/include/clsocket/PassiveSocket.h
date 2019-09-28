@@ -116,6 +116,5 @@ namespace SimpleSocket {
 		struct ip_mreq  m_stMulticastRequest;   /// group address for multicast
 
 	};
-
-#endif // __PASSIVESOCKET_H__
 }
+#endif // __PASSIVESOCKET_H__

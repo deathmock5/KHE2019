@@ -8,8 +8,6 @@
 #include "logging.hpp"
 #include "result_code_container.hpp"
 
-#define SQLITE_LIMIT_WORKER_THREADS 0
-
 namespace sqlite {
 
   class database : public result_code_container {

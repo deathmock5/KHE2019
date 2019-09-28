@@ -14,6 +14,7 @@ public:
 	static std::string getText(const int& index) {
 
 	}
+
 private:
 	static GametextManager* _instance;
 };
