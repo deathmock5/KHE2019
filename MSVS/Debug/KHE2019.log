@@ -1,3 +1,18 @@
 ﻿  main.cpp
+d:\projects\simplebattlebot\khe2019\msvs\include\gamedatabase.h(36): warning C4129: ' ': unrecognized character escape sequence
+d:\projects\simplebattlebot\khe2019\msvs\include\gamedatabase.h(42): warning C4129: ' ': unrecognized character escape sequence
+d:\projects\simplebattlebot\khe2019\msvs\include\clientrequestmanager.h(45): warning C4244: 'argument': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+d:\projects\simplebattlebot\khe2019\msvs\include\clientrequestmanager.h(60): warning C4244: 'argument': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+d:\projects\simplebattlebot\khe2019\msvs\include\clientrequestmanager.h(102): warning C4244: 'argument': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+d:\projects\simplebattlebot\khe2019\msvs\include\socketserverclient.h(56): warning C4267: 'argument': conversion from 'size_t' to 'uint16_t', possible loss of data
+  Generating Code...
+  Compiling...
+  ClientRequestManager.cpp
+d:\projects\simplebattlebot\khe2019\msvs\include\gamedatabase.h(36): warning C4129: ' ': unrecognized character escape sequence
+d:\projects\simplebattlebot\khe2019\msvs\include\gamedatabase.h(42): warning C4129: ' ': unrecognized character escape sequence
+d:\projects\simplebattlebot\khe2019\msvs\include\clientrequestmanager.h(45): warning C4244: 'argument': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+d:\projects\simplebattlebot\khe2019\msvs\include\clientrequestmanager.h(60): warning C4244: 'argument': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+d:\projects\simplebattlebot\khe2019\msvs\include\clientrequestmanager.h(102): warning C4244: 'argument': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+  Generating Code...
   KHE2019.vcxproj -> D:\Projects\SimpleBattleBot\KHE2019\Debug\KHE2019.exe
   KHE2019.vcxproj -> D:\Projects\SimpleBattleBot\KHE2019\Debug\KHE2019.pdb (Partial PDB)

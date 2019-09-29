@@ -126,6 +126,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ClientRequestManager.cpp" />
     <ClCompile Include="src\clsocket\ActiveSocket.cpp" />
     <ClCompile Include="src\clsocket\PassiveSocket.cpp" />
     <ClCompile Include="src\clsocket\SimpleSocket.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="include\gzip\decompress.hpp" />
     <ClInclude Include="include\gzip\utils.hpp" />
     <ClInclude Include="include\gzip\version.hpp" />
+    <ClInclude Include="include\ResponceHeadder.h" />
     <ClInclude Include="include\SocketServer.h" />
     <ClInclude Include="include\SocketServerClient.h" />
     <ClInclude Include="include\sqlite\sqlite.h" />

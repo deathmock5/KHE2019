@@ -36,6 +36,9 @@
     <ClCompile Include="src\duktape\duktape.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ClientRequestManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SocketServer.h">
@@ -138,6 +141,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\duk_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResponceHeadder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

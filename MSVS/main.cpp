@@ -50,11 +50,10 @@ static duk_ret_t native_adder(duk_context *ctx) {
 int main(int* argc, int ** args) {
 	
 	//Start the server.
-	SocketServer server(80, "127.0.0.1");
+	SocketServer server(80, "10.7.96.27");
 	ClientRequestManager::bindFunctionToString(dummy_upper_case, 1, "upper");
 	ClientRequestManager::bindFunctionToString(native_print, 1, "print");
 	ClientRequestManager::bindFunctionToString(native_adder, -1, "adder");
-	ClientRequestManager::processClientRequest("test", "test2");
 
 	//TODO: Create instance of the socket server.
 	//TODO: load XML documents to take text.
